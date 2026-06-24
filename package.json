@@ -1,0 +1,26 @@
+{
+  "name": "loja-pocoes-e-solucoes-web",
+  "version": "1.0.0",
+  "description": "Web service e interface web para a loja ficticia Pocoes e Solucoes.",
+  "type": "module",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "keywords": [
+    "web",
+    "nodejs",
+    "express",
+    "sqlite",
+    "sequelize",
+    "ajax"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "sequelize": "^6.37.8",
+    "sqlite3": "^6.0.1"
+  }
+}
