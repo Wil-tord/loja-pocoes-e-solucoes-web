@@ -9,7 +9,7 @@ A aplicação representa a loja fictícia **Poções e Soluções**, da personag
 ### Página pública
 
 * Apresenta a descrição da loja.
-* Mostra o histórico da loja, criada em 1867.
+* Mostra o histórico da loja.
 * Exibe uma seção de produtos disponíveis.
 * Cada poção possui nome, imagem, descrição, preço e botão **Comprar**.
 * As poções são carregadas dinamicamente a partir do Web Service usando JavaScript e `fetch`.
@@ -200,6 +200,20 @@ O banco é iniciado com algumas poções de exemplo:
 As imagens das poções são carregadas a partir de URLs externas. Por isso, elas podem demorar alguns segundos na primeira vez que a página for aberta, dependendo da conexão com a internet.
 
 Como o banco está em memória, qualquer poção cadastrada pela página administrativa será perdida quando o servidor for encerrado. Ao iniciar o servidor novamente, os dados voltam para o estado inicial.
+
+Nesta entrega, os botões **Comprar** são exibidos conforme solicitado, mas ainda não possuem funcionalidade real de compra.
+
+## Melhorias futuras
+
+Esta versão atende aos requisitos principais da atividade, mas algumas melhorias poderiam ser implementadas em versões futuras do sistema:
+
+* Implementar a funcionalidade real do botão **Comprar**, permitindo que o usuário selecione uma poção e finalize ou simule uma compra.
+* Adicionar **autenticação e autorização** na página administrativa, para que apenas a vendedora da loja consiga acessar as funções de cadastro e remoção de poções.
+* Substituir o SQLite em memória por um banco de dados persistente, como **PostgreSQL**, para que as poções cadastradas não sejam perdidas quando o servidor for encerrado.
+* Melhorar a confirmação de remoção de poções, substituindo o `confirm()` padrão do navegador por uma janela de confirmação personalizada, como um **modal**, mais integrada ao visual da página.
+* Adicionar validações mais completas no formulário de cadastro, como validação de preço, URL da imagem e campos obrigatórios.
+* Permitir upload local de imagens, em vez de depender apenas de URLs externas.
+* Melhorar aspectos de acessibilidade, como textos alternativos mais descritivos nas imagens e mensagens de status mais claras.
 
 ## Autor
 
