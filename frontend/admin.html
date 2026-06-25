@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administração | Poções e Soluções</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/admin.js" defer></script>
+  </head>
+
+  <body class="admin-page">
+    <header class="admin-header">
+      <nav class="navbar">
+        <a class="logo" href="./index.html">Poções e Soluções</a>
+
+        <div class="nav-links">
+          <a href="./index.html">Página pública</a>
+          <a href="#cadastro">Cadastrar</a>
+          <a href="#lista">Gerenciar poções</a>
+        </div>
+      </nav>
+
+      <section class="admin-hero">
+        <p class="eyebrow">Área da vendedora</p>
+        <h1>Administração</h1>
+        <p>
+          Cadastre novas poções, visualize o estoque atual e remova produtos da
+          loja de Annabelle Merigold.
+        </p>
+      </section>
+    </header>
+
+    <main class="admin-main">
+      <section class="admin-panel" id="cadastro">
+        <div class="section-heading">
+          <p class="section-label">Cadastro</p>
+          <h2>Nova poção</h2>
+          <p>
+            Preencha os campos abaixo para adicionar uma nova poção ao Web
+            Service.
+          </p>
+        </div>
+
+        <form id="potion-form" class="potion-form">
+          <div class="form-group">
+            <label for="name">Nome da poção</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ex: Poção da Coragem Súbita"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="description">Descrição</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              placeholder="Descreva o efeito da poção..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="image">URL ou caminho da imagem</label>
+            <input
+              type="text"
+              id="image"
+              name="image"
+              placeholder="Ex: https://exemplo.com/pocao.png"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="price">Preço em moedas</label>
+            <input
+              type="number"
+              id="price"
+              name="price"
+              min="0"
+              placeholder="Ex: 250"
+              required
+            />
+          </div>
+
+          <button class="form-button" type="submit">Cadastrar poção</button>
+        </form>
+
+        <p id="admin-status" class="status-message"></p>
+      </section>
+
+      <section class="admin-panel" id="lista">
+        <div class="section-heading">
+          <p class="section-label">Gerenciamento</p>
+          <h2>Poções cadastradas</h2>
+          <p>
+            Esta lista vem diretamente da API. Ao remover uma poção, ela também
+            desaparece da página pública enquanto o servidor estiver rodando.
+          </p>
+        </div>
+
+        <div id="admin-potions-list" class="admin-potions-list"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h2>Poções e Soluções</h2>
+        <p>Painel administrativo da loja.</p>
+      </div>
+
+      <div>
+        <p>Annabelle Merigold</p>
+        <p>Magia engarrafada desde 1867</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poções e Soluções</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/loja.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="logo" href="./index.html">Poções e Soluções</a>
+
+        <div class="nav-links">
+          <a href="#loja">Loja</a>
+          <a href="#historia">História</a>
+          <a href="#produtos">Poções</a>
+          <a href="./admin.html">Administração</a>
+        </div>
+      </nav>
+
+      <section class="hero" id="loja">
+        <div class="hero-content">
+          <p class="eyebrow">Magia engarrafada desde 1867</p>
+          <h1>Poções e Soluções</h1>
+          <p>
+            No Beco da Última Saída, Annabelle Merigold prepara poções raras
+            para problemas comuns, incomuns e absolutamente inexplicáveis.
+          </p>
+
+          <a class="hero-button" href="#produtos">Ver poções disponíveis</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section about-section">
+        <div>
+          <p class="section-label">A loja</p>
+          <h2>Uma casa clássica de mistérios, aromas e pequenos milagres</h2>
+        </div>
+
+        <p>
+          A Poções e Soluções é uma loja fictícia especializada em poções de
+          diversos tipos. Cada item é preparado com cuidado por Annabelle
+          Merigold, que combina tradição, conhecimento arcano e uma pitada de
+          ousadia comercial.
+        </p>
+      </section>
+
+      <section class="section history-section" id="historia">
+        <div class="history-text">
+          <p class="section-label">Histórico</p>
+          <h2>Criada em 1867</h2>
+          <p>
+            Fundada em 1867, a loja atravessou gerações atendendo viajantes,
+            estudantes, bruxos, curiosos e clientes desesperados por soluções
+            rápidas. Após a pandemia de COVID-19, Annabelle decidiu modernizar
+            as vendas criando este website.
+          </p>
+        </div>
+
+        <div class="history-gallery" aria-label="Fotos históricas da loja">
+          <div class="gallery-card">Beco da Última Saída</div>
+          <div class="gallery-card">Laboratório de Poções</div>
+          <div class="gallery-card">Estante de Frascos Raros</div>
+        </div>
+      </section>
+
+      <section class="section products-section" id="produtos">
+        <div class="section-heading">
+          <p class="section-label">Produtos</p>
+          <h2>Poções disponíveis</h2>
+          <p>
+            Os produtos abaixo são carregados diretamente do Web Service da
+            loja.
+          </p>
+        </div>
+
+        <p id="products-status" class="status-message">
+          Carregando poções...
+        </p>
+
+        <div id="products-list" class="products-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h2>Poções e Soluções</h2>
+        <p>Beco da Última Saída, nº 1867</p>
+      </div>
+
+      <div>
+        <p>Contato: annabelle@pocoesesolucoes.com</p>
+        <p>Atendimento: segunda a sexta, das 9h às 18h</p>
+      </div>
+    </footer>
+  </body>
+</html>
